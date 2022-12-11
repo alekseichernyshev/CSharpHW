@@ -3,10 +3,10 @@
 Console.WriteLine("Введите число\t");
 int number = int.Parse(Console.ReadLine());
 int sum = 0;
-//if (number < 0)
-//{
-//    number *= -1;   // делаем число положительным
-//}
+if (number < 0)
+{
+    number *= -1;   // делаем число положительным
+}
 
 while (number != 0)
 {
