@@ -6,17 +6,17 @@ public class MyLibrary
         return new int[count];
     }
 
-    // Заполнение числами от 0-14
+    // Заполнение числами 
     public static void Fill(int[] array)
     {
         for (int i = 0; i < array.Length; i++)
         {
-            array[i] = Random.Shared.Next(0, 15);
+            array[i] = Random.Shared.Next(100, 1000);
         }
     }
 
     // печать массива
-    public static string Print(int[] array)
+     public static string Print(int[] array)
     {
 
         string result = String.Empty;
@@ -73,4 +73,32 @@ public class MyLibrary
         return r;
     }
 
-} 
+// счётчик чётных чисел в массиве
+
+    //  public static int CountEven()
+    //  {
+    //      int number = 0;
+    //      for (int i = 0; i < array.Length; i++)
+    //      {
+    //          if (array[i] % 2 == 0)
+    //          {
+    //              number++;
+    //          }
+    //      }
+    //      return number;
+    //  }
+
+     // Печать массива
+     public static string Print2(int[] array)
+     {
+        return String.Join(' ', array);
+     }
+}
+
+
+
+
+
+
+ 
+
