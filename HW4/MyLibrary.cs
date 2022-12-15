@@ -125,6 +125,29 @@ public class MyLibrary
         }
         return sum;
     }
+
+    // разница между максимальным и минимальным значением массива
+    public static int DiffMinMax(int[] value)
+    {
+        int min = value[0];
+        int max = value[0];
+        int diff = 0;
+        int count = value.Length;
+
+        for (int i = 0; i < count; i++)
+        {
+            if(value[i] > max)
+            {
+                max = value[i];
+            }
+            else if(value[i] < min)
+            {
+                min = value[i];
+            }
+        }
+        diff = max - min;
+        return diff;
+    }
 }
 
 
