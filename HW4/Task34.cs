@@ -6,14 +6,15 @@ public class HW4
     public static void Task34()
     {
         //создать массив
-        int[] array = CreateArray(4);
+        int[] ar = CreateArray(4);
         //заполнить массив трёхзначными числами
-        Fill(array);
-        Print2(array);
+        Fill(ar);
         
         // отобразить количество чётных чисел в массиве
-        
-        
+        int result = CountEven(ar);
+        Console.WriteLine($"{Print2(ar)} => {result}");
+
+
     }
 }
 

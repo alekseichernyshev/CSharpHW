@@ -16,7 +16,7 @@ public class MyLibrary
     }
 
     // печать массива
-     public static string Print(int[] array)
+    public static string Print(int[] array)
     {
 
         string result = String.Empty;
@@ -73,26 +73,27 @@ public class MyLibrary
         return r;
     }
 
-// счётчик чётных чисел в массиве
+    // счётчик чётных чисел в массиве
 
-    //  public static int CountEven()
-    //  {
-    //      int number = 0;
-    //      for (int i = 0; i < array.Length; i++)
-    //      {
-    //          if (array[i] % 2 == 0)
-    //          {
-    //              number++;
-    //          }
-    //      }
-    //      return number;
-    //  }
+    public static int CountEven(int[] value)
+    {
+        int result = 0;
+        int count = value.Length;
+        for (int i = 0; i < count; i++)
+        {
+            if (value[i] % 2 == 0)
+            {
+                result++;
+            }
+        }
+        return result;
+    }
 
-     // Печать массива
-     public static string Print2(int[] array)
-     {
+    // Печать массива
+    public static string Print2(int[] array)
+    {
         return String.Join(' ', array);
-     }
+    }
 }
 
 
@@ -100,5 +101,5 @@ public class MyLibrary
 
 
 
- 
+
 
