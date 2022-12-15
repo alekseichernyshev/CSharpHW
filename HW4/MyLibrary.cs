@@ -92,7 +92,12 @@ public class MyLibrary
     // Печать массива
     public static string Print2(int[] array)
     {
-        return String.Join(' ', array);
+        string result = String.Empty;
+        for (int i = 0; i < array.Length; i++)
+        {
+            result += $"({array[i]})";
+        }
+        return result;
     }
 }
 
