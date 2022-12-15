@@ -2,7 +2,7 @@
 using static MyLibrary;
 using static System.Console;
 
-public class Hw3
+public class Hw3Task3
 {
   public static void Task29()
   {
