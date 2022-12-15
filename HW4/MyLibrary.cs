@@ -99,6 +99,32 @@ public class MyLibrary
         }
         return result;
     }
+
+    // Заполнение числами второй вариант
+    public static void Fill2(int[] array)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = Random.Shared.Next(0, 100);
+        }
+    }
+
+    // Сумма элементов на нечётных позициях
+    public static int SumNotEvenIndex(int[] value)
+    {
+        int sum = 0;
+        int count = value.Length;
+
+        for (int i = 0; i < count; i++)
+        {
+            if (i % 2 != 0)
+            {
+                sum += value[i];
+
+            }
+        }
+        return sum;
+    }
 }
 
 
